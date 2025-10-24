@@ -1,0 +1,5 @@
+.wl-panel {
+  /* 覆盖评论默认样式 */
+  margin: 0 !important;
+  margin-top: 0.5em !important;
+}

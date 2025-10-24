@@ -1,0 +1,37 @@
+{
+  "version": 2,
+  "buildCommand": "pnpm build",
+  "outputDirectory": ".vitepress/dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/llms.md",
+      "destination": "/llms.txt"
+    },
+    {
+      "source": "/llms-full.md",
+      "destination": "/llms-full.txt"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ],
+  "env": {
+    "NODE_VERSION": "22",
+    "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD": "1",
+    "NODE_OPTIONS": "--max_old_space_size=4096"
+  }
+}

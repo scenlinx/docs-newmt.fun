@@ -47,7 +47,7 @@ hero:
     desc: | # 支持 YAML 的换行符，保持多行格式
       · 月/季/半年付 <span class="promo-text">85折: 123</span>
       · 年付以上 <span class="promo-text">64折: 1233</span>
-    date: '2025年1月7日23时59分'
+    date: '2026年1月7日23时59分'
     dateIcon: 'mdi:calendar-star'
     dateText: '活动截止日期'
     link: 'https://xxxxxx'
